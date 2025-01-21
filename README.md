@@ -1,6 +1,6 @@
 # Project Overview
 
-This project focuses on the application of Machine Learning techniques in Water Cherenkov Detectors. The analysis of data preprocessing for pure water and NaCl solution is contained in the `process_pure.ipynb` and `process_salt.ipynb` files, respectively. These notebooks handle the initial data preparation steps for both cases. On the other hand, the training and evaluation of classification models are carried out in the `voting_pure.py` and `voting_salt.py` scripts, where different model architectures and evaluation metrics are applied to assess their performance.
+This project focuses on the application of Machine Learning techniques in Water Cherenkov Detectors for Gamma and Neutron Source Classification. The analysis of data preprocessing for pure water and NaCl solution is contained in the `process_pure.ipynb` and `process_salt.ipynb` files, respectively. These notebooks handle the initial data preparation steps for both cases. On the other hand, the training and evaluation of ensemble classification models are carried out in the `voting_pure.py` and `voting_salt.py` scripts, where different model architectures and evaluation metrics are applied to assess their performance.
 
 ## Downloading Data Files
 
