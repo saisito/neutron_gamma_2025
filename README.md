@@ -30,7 +30,8 @@ results_salt/             # Directory storing results for trained models in NaCl
 models/                   # Subdirectory within results_pure/ and results_salt/ for saving trained model files
 process_pure.ipynb        # Notebook for preprocessing and visualization of pure water data
 process_salt.ipynb        # Notebook for preprocessing and visualization of NaCl solution data
-comparison_classifiers.ipynb # Notebook for comparing base classifiers trained on pure water and NaCl solution
+comparison_base_classifiers.ipynb # Notebook for comparing base classifiers trained on pure water and NaCl solution
+comparison_ensemble_classifiers.ipynb # Notebook for comparing ensemble classifiers trained on pure water and NaCl solution
 voting_pure.py            # Script for ensemble classification using pure water data
 voting_salt.py            # Script for ensemble classification using NaCl solution data
 download_files.py         # Script for downloading required data files
@@ -81,7 +82,8 @@ pip install -r requirements.txt
    - Use `voting_salt.py` for the NaCl solution.
 
 3. **Compare Results:**
-   - Open the notebook `comparison.ipynb` to compare the results between pure water and the NaCl solution.
+   - Open the notebook `comparison_base_classifiers.ipynb` to compare the results of base classifiers between pure water and the NaCl solution.
+   - Open the notebook `comparison_ensemble_classifiers.ipynb` to compare the results of ensemble classifiers between pure water and the NaCl solution.
 
 Each step is self-contained, but ensure the data files are downloaded first (see [Downloading Data Files](#downloading-data-files)).
 
@@ -98,7 +100,7 @@ The preprocessing and analysis results for pure water and NaCl solution are deta
 
 ### Example Visualizations
 - Class distributions before and after preprocessing for both media.
-- Model performance metrics such as accuracy, precision, recall, f1-score and log loss.
+- Model performance metrics such as accuracy, precision, recall, f1-score and log loss, confusion matrix, roc curves.
 
 ### Script Outputs
 - The results from `voting_pure.py` and `voting_salt.py` will be stored in the `results_pure/` and `results_salt/` directories, respectively. These directories include:
@@ -108,7 +110,7 @@ The preprocessing and analysis results for pure water and NaCl solution are deta
 
 - Additionally, the trained models will be saved in a `models/` subdirectory within `results_pure/` and `results_salt/`.
 
-For a deeper analysis and specific plots, refer to the `process_pure.ipynb`, `process_salt.ipynb`, or `comparison.ipynb` notebooks.
+For a deeper analysis and specific plots, refer to the `process_pure.ipynb`, `process_salt.ipynb`, or `comparison_base_classifiers.ipynb`, `comparison_ensemble_classifiers.ipynb` notebooks.
 
 ---
 
