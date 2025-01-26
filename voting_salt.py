@@ -154,7 +154,7 @@ rf_model = train_and_tune_model(
     X_train, 
     y_train, 
     "rf",   
-    n_iter=100,  
+    n_iter=50,  
     cv=5
 )
 
@@ -164,7 +164,7 @@ catboost_model = train_and_tune_model(
     X_train, 
     y_train, 
     "catboost",
-    n_iter=100,
+    n_iter=50,
     cv=5
 )
 
@@ -174,7 +174,7 @@ xgb_model = train_and_tune_model(
     X_train, 
     y_train, 
     "xgboost",
-    n_iter=100,
+    n_iter=50,
     cv=5
 )
 

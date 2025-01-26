@@ -20,6 +20,7 @@ This project focuses on the application of Machine Learning techniques in Water 
 The repository contains the following main files and directories:
 
 ```
+ale/                      # Directory containing the preconfigured Python virtual environment with all required dependencies installed. To run scripts, use the `python` command.
 AmBe/                     # Directory for downloaded experimental data files
 filtered_AmBe_pure/       # Directory for neutron and gamma pulses in the selected energy range for pure water
 filtered_AmBe_salt/       # Directory for neutron and gamma pulses in the selected energy range for NaCl solution
@@ -63,11 +64,29 @@ This project includes large data files that are not stored directly in the repos
 
 ## Requirements
 
-To run this project, you need to install several dependencies. You can easily do this by using the `requirements.txt` file included in the repository. Run the following command in your terminal:
+To run this project, you have two options to set up your environment:
 
-```bash
-pip install -r requirements.txt
-```
+1. **Option 1: Activate the existing virtual environment**
+   - If you wish to use the preconfigured virtual environment, first, unzip the `ale.tar.gz` file to access the environment folder:
+     
+     ```bash
+     tar -xzvf ale.tar.gz
+     ```
+
+   - Once the environment is extracted, activate it by running the following command:
+
+    ```bash
+    source ale/bin/activate
+    ```
+
+   The required dependencies will already be installed in the virtual environment, so you don't need to install them again.
+
+2. **Option 2: Install dependencies manually**
+   - If you prefer to use your own environment, you can install the required dependencies by running the following command:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
 
 ---
 
